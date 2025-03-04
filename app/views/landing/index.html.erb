@@ -1,0 +1,51 @@
+<header class="header">
+  <nav class=" container nav">
+    <ul class="nav-list">
+      <li><%= link_to "Home", root_path, class: "nav-link" %></li>
+      <li><%= link_to "As Seen In", "#", class: "nav-link" %></li>
+      <li><%= link_to "Projects", "#", class: "nav-link" %></li>
+      <li><%= link_to "Hobbies", "#", class: "nav-link" %></li>
+      <li><%= link_to "Contact", "#", class: "nav-link" %></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="header-section">
+  <div class="container grid grid--2-cols">
+    <div class="header-text">
+      <h1 class="header-name">Benjamin Randolph</h1>
+      <h3 class="header-title">Software Developer</h3>
+    </div>
+    <div class="header-img-container">
+      <%= image_tag("self.webp", alt: "Photo of Benjamin Randolph", class: "header-img") %>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container about-grid">
+    <div class="about">
+      <h2 class="about-heading">About me</h2>
+      <p class="about-text">
+        I am a passionate Software Engineer with a strong foundation in full-stack development, particularly in Ruby on Rails.
+        Currently working as a Software Engineering Contractor, specializing in building responsive applications.
+        My experience includes integrating payment systems, implementing API workflows, and building complex CRUD functionality.</p>
+      <p class="about-text">
+        Prior to my transition into tech, I served as an Operations Manager at Nabors Drilling Technologies, where I successfully managed large teams and significant capital resources, driving a 30% increase in operational efficiency.
+        This unique blend of technical and managerial experience allows me to approach challenges with a holistic perspective.
+      </p>
+      <p class="about-text">
+        I thrive in collaborative environments and enjoy mentoring others, fostering growth and learning within teams.
+        My technical skills include Ruby on Rails, PostgreSQL, Redis, and CI/CD processes, complemented by a solid understanding of Agile workflows and Test-Driven Development.
+        I am committed to delivering high-quality software solutions and continuously expanding my knowledge in the ever-evolving tech landscape.
+      </p>
+    </div>
+    <div class="skill-icons">
+      <a href="https://skill-icons-builder.vercel.app">
+        <img src="https://go-skill-icons.vercel.app/api/icons?i=ruby,rails,postgres,redis,git,heroku,github,githubactions,api,rubymine,vscode,postman,apple,sass,tailwind,bootstrap&perline=4"
+             alt="List of skills" class="skill-icon-list"
+          />
+      </a>
+    </div>
+  </div>
+</section>
