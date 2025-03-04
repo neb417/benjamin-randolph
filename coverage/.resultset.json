@@ -1,0 +1,34 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/benjaminrandolph/projects/benjamin-randolph/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/benjaminrandolph/projects/benjamin-randolph/app/helpers/landing_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/benjaminrandolph/projects/benjamin-randolph/app/controllers/landing_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/benjaminrandolph/projects/benjamin-randolph/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1741096594
+  }
+}
