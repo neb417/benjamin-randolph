@@ -38,5 +38,9 @@ module BenjaminRandolph
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.exceptions_app = ->(env) {
+      ErrorsController.action(:show).call(env)
+    }
   end
 end
