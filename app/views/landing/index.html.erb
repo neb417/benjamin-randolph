@@ -1,19 +1,3 @@
-<header class="header">
-  <nav class="nav-container">
-    <ul class="nav-list">
-      <li><%= link_to "Home", root_path, class: "nav-link" %></li>
-      <li><%= link_to "As Seen In", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
-      <li><%= link_to "Projects", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
-      <li><%= link_to "Hobbies", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
-      <li><%= link_to "Contact", "#contact-info", class: "nav-link" %></li>
-    </ul>
-  </nav>
-
-  <div class="flash-container">
-    <%= render partial: 'components/notices' %>
-  </div>
-</header>
-
 <section class="hero-section">
   <div class="container hero-container">
     <div class="hero-text">
@@ -53,25 +37,3 @@
     </div>
   </div>
 </section>
-
-<footer class="footer">
-  <div class="container footer-container">
-    <div class="contact-text">
-      Contact
-    </div>
-
-    <div id="contact-info" class="contact-details">
-      <div class="contact-link">
-        <a href="mailto:ben@benjamin-randolph.com">
-          <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
-        </a>
-      </div>
-
-      <div class="contact-link">
-        <a href="https://www.linkedin.com/in/ben-randolph-43881a95/">
-          <ion-icon name="logo-linkedin"  class="contact-icon"></ion-icon>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
