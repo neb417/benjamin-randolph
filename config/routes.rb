@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root "landing#index"
+
+  get "under_construction", to: "construction#show"
 end
