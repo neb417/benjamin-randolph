@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   root "landing#index"
 
   get "under_construction", to: "construction#show"
+  get "as_seen_in", to: "as_seen_in#index"
 end
