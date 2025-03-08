@@ -1,6 +1,6 @@
 <%= turbo_frame_tag "notices" %>
   <% flash.each do |flash_type, message| %>
-    <div class="container flash-container <%= flash_type %>">
+    <div class="container flash-container <%= flash_type %>" data-controller="delay-remove">
       <div class="flash-message">
         <%= message %>
       </div>

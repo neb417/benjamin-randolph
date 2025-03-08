@@ -3,6 +3,11 @@
   align-content: center;
   justify-content: center;
   padding: 2.4rem;
+  transition: opacity 1s ease-in-out;
+}
+
+.flash-container.show-flash {
+  opacity: 1;
 }
 
 .notice {
