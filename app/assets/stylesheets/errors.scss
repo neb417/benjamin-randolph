@@ -1,0 +1,34 @@
+.error-section {
+  border-top: 0.1rem solid #ddd;
+  height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-container {
+  display: flex;
+  align-items: stretch;
+  height: 33%;
+}
+
+.error-text {
+  font-size: 2.0rem;
+}
+
+.error-status-code {
+  font-size: 5.2rem;
+  color: #400080;
+}
+
+.top {
+  align-self: start;
+}
+
+.middle {
+  align-self: center;
+}
+
+.bottom {
+  align-self: end;
+}

@@ -1,0 +1,13 @@
+<% # locals: (status_code:) %>
+
+<section class="error-section">
+  <div class="container error-container">
+    <div class="error-text top">
+      Looks like we ran into a
+    </div>
+    <div class="error-status-code middle">[<%= status_code %>]</div>
+    <div class="error-text bottom">
+      Click to go back <%= link_to "home", root_path %>.
+    </div>
+  </div>
+</section>
