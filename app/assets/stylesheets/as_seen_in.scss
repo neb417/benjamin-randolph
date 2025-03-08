@@ -1,0 +1,26 @@
+.as_seen_in_container {
+  display: flex;
+  justify-content: center;
+  border-top: 0.1rem solid #ddd;
+  margin-bottom: 4.8rem;
+}
+
+.videos-container {
+  margin-top: 4.8rem;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.video-heading {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.video-frame {
+  width: 64rem;
+  height: 36rem;
+}
