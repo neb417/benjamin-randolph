@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static values = { amount: { type: Number, default: 2000 } }
+  static values = { amount: { type: Number, default: 1500 } }
 
   connect() {
     this.element.classList.add('show-flash')
@@ -20,6 +20,6 @@ export default class extends Controller {
     this.element.classList.remove('show-flash')
     setTimeout(() => {
       this.element.remove()
-    }, 1000)
+    }, 250)
   }
 }

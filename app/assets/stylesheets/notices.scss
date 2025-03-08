@@ -2,16 +2,13 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   background-color: #a080c0;
   color: #fff;
 }
 
 .flash-container.show-flash {
   opacity: 1;
-}
-
-.flash-container {
 }
 
 .flash-message {
