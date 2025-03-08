@@ -30,6 +30,7 @@ maketintsandshades.com
 - Primary: #400080
 
 - Tints:
+#a080c0
 
 - Shades:
 
