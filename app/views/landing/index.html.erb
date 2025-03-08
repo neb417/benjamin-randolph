@@ -1,13 +1,17 @@
 <header class="header">
-  <nav class=" container nav">
+  <nav class="nav-container">
     <ul class="nav-list">
       <li><%= link_to "Home", root_path, class: "nav-link" %></li>
       <li><%= link_to "As Seen In", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
-      <li><%= link_to "Projects", "#", class: "nav-link" %></li>
-      <li><%= link_to "Hobbies", "#", class: "nav-link" %></li>
+      <li><%= link_to "Projects", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
+      <li><%= link_to "Hobbies", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
       <li><%= link_to "Contact", "#contact-info", class: "nav-link" %></li>
     </ul>
   </nav>
+
+  <div class="flash-container">
+    <%= render partial: 'components/notices' %>
+  </div>
 </header>
 
 <section class="hero-section">

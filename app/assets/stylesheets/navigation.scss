@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4.8rem;
+}
+
+.nav-container {
+  display: flex;
+  padding: 4.8rem 0 4.8rem 14.4rem;
 }
 
 .nav-list {

@@ -2,19 +2,19 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 2.4rem;
   transition: opacity 1s ease-in-out;
+  background-color: #a080c0;
+  color: #fff;
 }
 
 .flash-container.show-flash {
   opacity: 1;
 }
 
-.notice {
-  background-color: #a080c0;
-  color: #fff;
+.flash-container {
 }
 
 .flash-message {
-  font-size: 1.8rem;
+  padding: 4.8rem 14.4rem 4.8rem 19rem;
+  font-size: 1.6rem;
 }
