@@ -1,10 +1,10 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static values = { amount: { type: Number, default: 1500 } }
+  static values = { amount: { type: Number, default: 1750 } }
 
   connect() {
-    this.element.classList.add('show-flash')
+    this.element.parentElement.classList.add(`show-flash`)
     this.timeout = setTimeout(this.#remove, this.amountValue)
   }
 
@@ -17,9 +17,9 @@ export default class extends Controller {
   // private
 
   #remove = () => {
-    this.element.classList.remove('show-flash')
-    setTimeout(() => {
-      this.element.remove()
-    }, 250)
+    if (this.element.parentElement) {
+      this.element.parentElement.classList.remove('show-flash')
+    }
+    this.element.remove()
   }
 }

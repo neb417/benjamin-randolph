@@ -9,7 +9,6 @@
     </ul>
   </nav>
 
-  <div class="flash-container">
+  <%= turbo_frame_tag "notices", class: "flash-container" %>
     <%= render partial: 'components/notices' %>
-  </div>
 </header>
