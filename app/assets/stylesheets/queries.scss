@@ -1,5 +1,5 @@
 /***********************************/
-/* BELOW 1312px (Smaller desktops) */
+/* BELOW 1168px (Landscape Tablets) */
 /***********************************/
 
 //@media (max-width: 84em) {
@@ -16,6 +16,67 @@
 //  }
 //}
 
-@media (max-width: 82rem) {
+@media (max-width: 73rem) {
+  .header {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .nav-container{
+    align-self: center;
+    padding: 4.8rem 0;
+  }
+
+  .flash-container.show-flash {
+    flex: 1;
+    padding: 2.4rem 0;
+  }
+
+  .hero-container {
+    display: block;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-name {
+    font-size: 8.6rem;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero-img-container {
+    padding-top: 0;
+  }
+
+  .hero-img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/***********************************/
+/* BELOW 944px (Tablets) */
+/***********************************/
+
+//@media (max-width: 84em) {
+//  .hero {
+//    max-width: 120rem;
+//  }
+//
+//  .heading-primary {
+//    font-size: 4.4rem;
+//  }
+//
+//  .gallery {
+//    grid-template-columns: repeat(2, 1fr);
+//  }
+//}
+
+@media (max-width: 59rem) {
 
 }
