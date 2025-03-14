@@ -54,13 +54,17 @@
 /***********************************/
 
 @media (max-width: 41rem) {
+  .header {
+    flex-direction: row-reverse;
+  }
+
   .btn-mobile-nav {
     display: block;
     text-align: right;
   }
 
   .icon-mobile-nav {
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 2rem 2rem;
   }
 
   .nav-container {
@@ -95,6 +99,14 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .nav-list {
