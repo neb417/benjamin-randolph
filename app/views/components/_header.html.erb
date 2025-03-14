@@ -1,15 +1,15 @@
-<header class="header">
+<header class="header" data-controller="nav-menu">
   <nav class="nav-container">
     <ul class="nav-list">
       <li><%= link_to "Home", root_path, class: "nav-link" %></li>
       <li><%= link_to "As Seen In", as_seen_in_path, class: "nav-link" %></li>
       <li><%= link_to "Projects", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
       <li><%= link_to "Hobbies", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
-      <li><%= link_to "Contact", "#contact-info", class: "nav-link" %></li>
+      <li><%= link_to "Contact", "#contact-info", class: "nav-link", data: { action: "click->nav-menu#smoothScroll" } %></li>
     </ul>
   </nav>
 
-  <button class="btn-mobile-nav">
+  <button class="btn-mobile-nav" data-action='click->nav-menu#toggleMenu'>
     <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
     <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
   </button>
