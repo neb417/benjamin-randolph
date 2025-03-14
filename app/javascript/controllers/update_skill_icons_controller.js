@@ -14,8 +14,8 @@ export default class extends Controller {
     const width = window.innerWidth
     const img = document.getElementById('skill-icons')
 
-    if (width < 1168) {
-      img.src = "https://go-skill-icons.vercel.app/api/icons?i=ruby,rails,postgres,redis,git,heroku,github,githubactions,api,rubymine,vscode,postman,apple,sass,tailwind,bootstrap&perline=16"
+    if (width < 1168 && width > 656) {
+      img.src = "https://go-skill-icons.vercel.app/api/icons?i=ruby,rails,postgres,redis,git,heroku,github,githubactions,api,rubymine,vscode,postman,apple,sass,tailwind,bootstrap&perline=8"
     } else {
       img.src = "https://go-skill-icons.vercel.app/api/icons?i=ruby,rails,postgres,redis,git,heroku,github,githubactions,api,rubymine,vscode,postman,apple,sass,tailwind,bootstrap&perline=4"
     }
