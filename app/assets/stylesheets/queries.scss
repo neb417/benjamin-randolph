@@ -58,6 +58,10 @@
     flex-direction: row-reverse;
   }
 
+  .container {
+    padding: 0 2.4rem
+  }
+
   .btn-mobile-nav {
     display: block;
     text-align: right;
@@ -117,5 +121,9 @@
   .nav-link:link,
   .nav-link:visited {
     font-size: 3rem;
+  }
+
+  .flash-container {
+    z-index: 10;
   }
 }
