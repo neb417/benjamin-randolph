@@ -1,21 +1,6 @@
 /***********************************/
 /* BELOW 1168px (Landscape Tablets) */
 /***********************************/
-
-//@media (max-width: 84em) {
-//  .hero {
-//    max-width: 120rem;
-//  }
-//
-//  .heading-primary {
-//    font-size: 4.4rem;
-//  }
-//
-//  .gallery {
-//    grid-template-columns: repeat(2, 1fr);
-//  }
-//}
-
 @media (max-width: 73rem) {
   .header {
     flex-direction: column;
@@ -42,7 +27,8 @@
   }
 
   .hero-name {
-    font-size: 8.6rem;
+    font-size: 6.2rem;
+    text-align: center;
   }
 
   .hero-title {
@@ -64,23 +50,60 @@
 }
 
 /***********************************/
-/* BELOW 944px (Tablets) */
+/* BELOW 656px */
 /***********************************/
 
-//@media (max-width: 84em) {
-//  .hero {
-//    max-width: 120rem;
-//  }
-//
-//  .heading-primary {
-//    font-size: 4.4rem;
-//  }
-//
-//  .gallery {
-//    grid-template-columns: repeat(2, 1fr);
-//  }
-//}
+@media (max-width: 41rem) {
+  .btn-mobile-nav {
+    display: block;
+    text-align: right;
+  }
 
-@media (max-width: 59rem) {
+  .icon-mobile-nav {
+    padding: 2rem 2rem 0 0;
+  }
 
+  .nav-container {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it inaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav-container {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
 }
