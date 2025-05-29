@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   get "under_construction", to: "construction#show"
   get "as_seen_in", to: "as_seen_in#index"
+  get "code", to: "code#index"
 end

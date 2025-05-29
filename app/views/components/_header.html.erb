@@ -3,7 +3,7 @@
     <ul class="nav-list">
       <li><%= link_to "Home", root_path, class: "nav-link" %></li>
       <li><%= link_to "As Seen In", as_seen_in_path, class: "nav-link" %></li>
-      <li><%= link_to "Code", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
+      <li><%= link_to "Code", code_path, class: "nav-link" %></li>
       <li><%= link_to "Not Code", under_construction_path, data: { turbo_stream: 'notices' }, class: "nav-link" %></li>
       <li><%= link_to "Contact", "#contact-info", class: "nav-link", data: { action: "click->nav-menu#smoothScroll" } %></li>
     </ul>
