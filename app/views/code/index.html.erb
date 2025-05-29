@@ -1,6 +1,28 @@
 <%= render partial: "components/page_title", locals: { title: "Code" } %>
- <section class="container">
-   <div>
-     Finance
+ <section class="container page-container">
+   <div class="page-row">
+     <div class="page-column">
+       <div class="page-column-heading">
+        <h2>Finance</h2>
+       </div>
+       <div class="page-content">
+         <p class="page-content-text">A simple budgeting app based on Ramit Sethi's book <%= link_to "I Will Teach You to be Rich", "https://www.iwillteachyoutoberich.com/", target: :_blank, class: "book-title standard-link" %></p>
+         <p class="page-content-text">Found on GitHub at <%= link_to "Finance", "https://github.com/neb417/finance", target: :_blank, class: "standard-link" %></p>
+       </div>
+     </div>
+     <div class="page-column centered">
+       Photo of finance app
+     </div>
+   </div>
+   <div class="page-row">
+     <div class="page-column centered">
+       Photo of Pinbowl Wizard
+     </div>
+     <div class="page-content">
+       <div class="page-column-heading">
+         <h2>Pinbowl Wizard</h2>
+       </div>
+       <p class="page-content-text">An app in progress to help a local business, <%= link_to "Pinbowl Alley", "https://www.facebook.com/profile.php?id=100085441176849", target: :_blank, class: "standard-link" %>, in my hometown of Limon, CO coordinate a pinball league.</p>
+     </div>
    </div>
  </section>
