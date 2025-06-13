@@ -6,15 +6,21 @@
 
     <div id="contact-info" class="contact-details">
       <div class="contact-link">
-        <a href="mailto:ben@benjamin-randolph.com">
+        <%= link_to "mailto:ben@benjamin-randolph.com", target: :_blank do %>
           <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
-        </a>
+        <% end %>
       </div>
 
       <div class="contact-link">
-        <a href="https://www.linkedin.com/in/ben-randolph-43881a95/">
-          <ion-icon name="logo-linkedin"  class="contact-icon"></ion-icon>
-        </a>
+        <%=  link_to "https://www.linkedin.com/in/ben-randolph-43881a95/", target: :_blank do %>
+          <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+        <% end %>
+      </div>
+
+      <div class="contact-link">
+        <%= link_to "https://github.com/neb417", target: :_blank do %>
+          <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+        <% end %>
       </div>
     </div>
   </div>
