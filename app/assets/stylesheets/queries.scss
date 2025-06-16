@@ -50,13 +50,26 @@
 }
 
 /***********************************/
+/* BELOW 880px */
+/***********************************/
+
+@media (max-width: 55rem) {
+  .page-column-heading {
+    font-size: 1.4rem;
+  }
+
+  .page-content-text {
+    padding-top: 1rem;
+  }
+}
+
+/***********************************/
 /* BELOW 656px */
 /***********************************/
 
 @media (max-width: 41rem) {
   .header {
     flex-direction: row-reverse;
-
   }
 
   .container {
@@ -135,5 +148,17 @@
   .video-frame {
     width: 32rem;
     height: 18rem;
+  }
+
+  .page-row {
+    display: block;
+  }
+
+  .page-column {
+    width: 100%;
+  }
+
+  .centered {
+    width: 100%;
   }
 }

@@ -1,6 +1,7 @@
 // Sassy
 
 @use "global";
+@use "queries";
 @use "grid";
 @use "hero";
 @use "about";
@@ -9,5 +10,4 @@
 @use "notices";
 @use "errors";
 @use "as_seen_in";
-@use "queries";
 @use "components";
