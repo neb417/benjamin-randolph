@@ -159,6 +159,10 @@
   }
 
   .centered {
-    width: 100%;
+    padding: 0 4rem;
+  }
+
+  .row-reverse {
+    flex-direction: row;
   }
 }
