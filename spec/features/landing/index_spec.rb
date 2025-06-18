@@ -5,7 +5,7 @@ RSpec.describe "Landing", type: :feature do
     it 'renders text on page' do
       visit root_path
 
-      within(".header-section") do
+      within(".hero-section") do
         expect(page).to have_content("Benjamin Randolph")
       end
 
