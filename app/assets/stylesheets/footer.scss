@@ -27,3 +27,25 @@
   stroke: #555;
   color: #555;
 }
+
+.cv-link {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .25rem;
+  background-color: #555;
+  border-radius: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.cv-link,
+.cv-link:visited,
+.cv-link:hover,
+.cv-link:active,
+.cv-link:focus {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.contact-text-link {
+  margin-bottom: 0.5rem;
+}
